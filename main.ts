@@ -1,5 +1,5 @@
-scene.setBackgroundColor(13)
 music.jumpDown.playUntilDone()
+scene.setBackgroundColor(13)
 let kitten = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 e e e . . . . e e e . . . . . . 
@@ -19,15 +19,16 @@ f b d d b b d d 2 b f f d f . .
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Projectile)
 pause(100)
-music.stopAllSounds()
 kitten.say("Meow!!!")
 kitten.setVelocity(0, 29)
 pause(2000)
-game.showLongText(game.askForString("Can you find the kitten?"), DialogLayout.Full)
-console.log("yes")
-if (true) {
-    game.showLongText("lgksjk;", DialogLayout.Center)
+let name = game.askForString("What is your name?")
+game.splash("Hello " + name)
+game.splash(name, "I am looking for a missing kitten.")
+let answer = game.askForString("Can you help me?")
+if (answer == "yes") {
+    game.showLongText("Thank you! Good luck!", DialogLayout.Bottom)
 } else {
+    game.showLongText("Bye then. Nice seeing u", DialogLayout.Full)
     game.reset()
 }
-pause(100)
