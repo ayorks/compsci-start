@@ -1,4 +1,5 @@
 # compsci-start ![Build status badge](https://github.com/ayorks/compsci-start/workflows/MakeCode/badge.svg)
+- a many player answers questions and questions are clues leading to code and the first person to find the code is the winner. (the winner finds the missing cat.) In the beginning of the game the missing cat story is explained. First characters see the story of the missing cat and then they go to the questions at the same time and there is an enter code slot at the bottom that can be filled out at any point. The first person to enter the correct key wins and the game stops. 
 
 
 
