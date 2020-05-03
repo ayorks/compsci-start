@@ -2,7 +2,8 @@
     "name": "Compsci start",
     "dependencies": {
         "device": "*",
-        "animation": "*"
+        "animation": "*",
+        "color-coded-tilemap": "*"
     },
     "description": "",
     "files": [
