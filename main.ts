@@ -96,20 +96,20 @@ d b b b b b c b c d b b b b b c
 c c c c c c b c d c c c c c c a 
 `, false)
 scene.setTile(2, img`
-. . . 6 6 6 6 6 6 6 6 6 6 . . . 
-. 6 6 7 7 7 7 7 7 7 7 7 7 6 6 . 
-. 6 7 7 7 7 7 7 7 7 7 7 7 7 6 . 
-6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
-6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
-6 7 6 7 7 7 7 7 7 7 7 7 7 6 7 6 
-8 6 7 7 7 7 7 7 7 7 7 7 7 7 6 8 
-8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 8 
-6 7 6 7 7 7 6 7 7 7 7 6 7 7 7 6 
-6 8 6 7 7 6 7 7 7 6 7 7 6 6 8 6 
-8 6 6 7 6 6 7 7 6 6 6 7 6 6 6 8 
-8 6 8 6 6 6 7 6 6 6 6 6 8 6 6 8 
-8 8 6 6 8 6 6 6 8 6 6 6 8 8 8 8 
-. f 6 e e 8 6 6 8 8 6 8 8 8 f . 
-. . f e e e 6 e 8 8 f f 8 f . . 
-. . . f f f 8 e e f f f f . . . 
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
 `, false)

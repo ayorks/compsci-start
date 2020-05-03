@@ -59,20 +59,20 @@ d b b b b c b b b c d b b b b c
 d b b b b b c b c d b b b b b c 
 c c c c c c b c d c c c c c c a 
 `</field></shadow></value><value name="wall"><shadow type="toggleOnOff" id="-Fksi]@Mv^9Ki3$cri|T"><field name="on">false</field></shadow></value><next><block type="gamesettile" id="MKlB/zPZ^FzmqP-jU6Vc"><value name="index"><shadow type="colorindexpicker" id="V{72#K4N]n|`mqwl=*_+"><field name="index">2</field></shadow></value><value name="img"><shadow type="tile_image_picker" id="IXwQ-J9w.T?HAT479btu"><field name="img">img`
-. . . 6 6 6 6 6 6 6 6 6 6 . . . 
-. 6 6 7 7 7 7 7 7 7 7 7 7 6 6 . 
-. 6 7 7 7 7 7 7 7 7 7 7 7 7 6 . 
-6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
-6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
-6 7 6 7 7 7 7 7 7 7 7 7 7 6 7 6 
-8 6 7 7 7 7 7 7 7 7 7 7 7 7 6 8 
-8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 8 
-6 7 6 7 7 7 6 7 7 7 7 6 7 7 7 6 
-6 8 6 7 7 6 7 7 7 6 7 7 6 6 8 6 
-8 6 6 7 6 6 7 7 6 6 6 7 6 6 6 8 
-8 6 8 6 6 6 7 6 6 6 6 6 8 6 6 8 
-8 8 6 6 8 6 6 6 8 6 6 6 8 8 8 8 
-. f 6 e e 8 6 6 8 8 6 8 8 8 f . 
-. . f e e e 6 e 8 8 f f 8 f . . 
-. . . f f f 8 e e f f f f . . . 
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
 `</field></shadow></value><value name="wall"><shadow type="toggleOnOff" id="H|18qJSGj,JX{@ddOTU{"><field name="on">false</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
