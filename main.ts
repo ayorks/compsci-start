@@ -29,10 +29,9 @@ kitten.setVelocity(0, 29)
 pause(2000)
 let name = game.askForString("What is your name?")
 game.splash("Hello " + name)
-game.splash(name, "I am looking for a missing kitten.")
-let answer = game.askForString("Can you help me?")
+let answer = game.askForString("Can you escape the room?")
 if (answer == "yes") {
-    game.showLongText("Thank you! Good luck!", DialogLayout.Center)
+    game.showLongText("Good luck!", DialogLayout.Center)
 } else {
     game.showLongText("Bye then. Nice seeing u", DialogLayout.Center)
     game.reset()
@@ -68,3 +67,49 @@ f f f c 3 c c c c c c f . .
 . . f f f f f f f f f f . . 
 . . . f f . . . f f f . . . 
 `, SpriteKind.Player)
+scene.setTileMap(img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . 2 2 2 . . . . 
+. . . 2 . 2 . . . . 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+`)
+scene.setTile(1, img`
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
+`, false)
+scene.setTile(2, img`
+. . . 6 6 6 6 6 6 6 6 6 6 . . . 
+. 6 6 7 7 7 7 7 7 7 7 7 7 6 6 . 
+. 6 7 7 7 7 7 7 7 7 7 7 7 7 6 . 
+6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
+6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 6 
+6 7 6 7 7 7 7 7 7 7 7 7 7 6 7 6 
+8 6 7 7 7 7 7 7 7 7 7 7 7 7 6 8 
+8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 8 
+6 7 6 7 7 7 6 7 7 7 7 6 7 7 7 6 
+6 8 6 7 7 6 7 7 7 6 7 7 6 6 8 6 
+8 6 6 7 6 6 7 7 6 6 6 7 6 6 6 8 
+8 6 8 6 6 6 7 6 6 6 6 6 8 6 6 8 
+8 8 6 6 8 6 6 6 8 6 6 6 8 8 8 8 
+. f 6 e e 8 6 6 8 8 6 8 8 8 f . 
+. . f e e e 6 e 8 8 f f 8 f . . 
+. . . f f f 8 e e f f f f . . . 
+`, false)
