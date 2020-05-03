@@ -3,8 +3,73 @@ enum ActionKind {
     Idle,
     Jumping
 }
+function D1 () {
+    scene.setTileMap(img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . 2 2 2 . . . . 
+. . . 2 . 2 . . . . 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+`)
+    scene.setTile(1, img`
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
+`, false)
+    scene.setTile(2, img`
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
+`, false)
+}
+function D2 () {
+	
+}
+function D3 () {
+	
+}
+function D4 () {
+	
+}
+function D5 () {
+	
+}
 scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
-    answer = game.askForString("")
+    answer = game.askForString("√p^2")
+    if (answer == "p") {
+        D2()
+    } else {
+        D1()
+    }
 })
 let answer = ""
 music.jumpDown.playUntilDone()
@@ -73,49 +138,3 @@ f f f c 3 c c c c c c f . .
 `, SpriteKind.Player)
 controller.moveSprite(Girl)
 Girl.setPosition(2, 54)
-scene.setTileMap(img`
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . 2 2 2 . . . . 
-. . . 2 . 2 . . . . 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-`)
-scene.setTile(1, img`
-b d d d d d d c c d d d d d d c 
-d b b b b b c d d c b b b b b c 
-d b b b b c d b b b c b b b b c 
-d b b b c d b b b b b c b b b c 
-d b b c d b b b b b b b c b b c 
-d b c d b b b b b b b b b c b c 
-d c d b b b b b b b b b b b c b 
-c d b b b b b b b b b b b b b c 
-c d b b b b b b b b b b b b c d 
-d c b b b b b b b b b b b c d c 
-d b c b b b b b b b b b c d b c 
-d b b c b b b b b b b c d b b c 
-d b b b c b b b b b c d b b b c 
-d b b b b c b b b c d b b b b c 
-d b b b b b c b c d b b b b b c 
-c c c c c c b c d c c c c c c a 
-`, false)
-scene.setTile(2, img`
-b d d d d d d c c d d d d d d c 
-d b b b b b c d d c b b b b b c 
-d b b b b c d b b b c b b b b c 
-d b b b c d b b b b b c b b b c 
-d b b c d b b b b b b b c b b c 
-d b c d b b b b b b b b b c b c 
-d c d b b b b b b b b b b b c b 
-c d b b b b b b b b b b b b b c 
-c d b b b b b b b b b b b b c d 
-d c b b b b b b b b b b b c d c 
-d b c b b b b b b b b b c d b c 
-d b b c b b b b b b b c d b b c 
-d b b b c b b b b b c d b b b c 
-d b b b b c b b b c d b b b b c 
-d b b b b b c b c d b b b b b c 
-c c c c c c b c d c c c c c c a 
-`, false)
