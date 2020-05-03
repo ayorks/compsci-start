@@ -3,6 +3,10 @@ enum ActionKind {
     Idle,
     Jumping
 }
+scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
+    answer = game.askForString("")
+})
+let answer = ""
 music.jumpDown.playUntilDone()
 scene.setBackgroundColor(13)
 let kitten = sprites.create(img`
@@ -29,7 +33,7 @@ kitten.setVelocity(0, 29)
 pause(2000)
 let name = game.askForString("What is your name?")
 game.splash("Hello " + name)
-let answer = game.askForString("Can you escape the room?")
+answer = game.askForString("Can you escape the room?")
 if (answer == "yes") {
     game.showLongText("Good luck!", DialogLayout.Center)
 } else {
@@ -67,6 +71,8 @@ f f f c 3 c c c c c c f . .
 . . f f f f f f f f f f . . 
 . . . f f . . . f f f . . . 
 `, SpriteKind.Player)
+controller.moveSprite(Girl)
+Girl.setPosition(2, 54)
 scene.setTileMap(img`
 . . . . . . . . . . 
 . . . . . . . . . . 
