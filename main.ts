@@ -3,6 +3,12 @@ enum ActionKind {
     Idle,
     Jumping
 }
+function D3 () {
+	
+}
+function D4 () {
+	
+}
 function D1 () {
     scene.setTileMap(img`
 . . . . . . . . . . 
@@ -31,7 +37,7 @@ d b b b c b b b b b c d b b b c
 d b b b b c b b b c d b b b b c 
 d b b b b b c b c d b b b b b c 
 c c c c c c b c d c c c c c c a 
-`, false)
+`, true)
     scene.setTile(2, img`
 b d d d d d d c c d d d d d d c 
 d b b b b b c d d c b b b b b c 
@@ -52,26 +58,59 @@ c c c c c c b c d c c c c c c a
 `, false)
 }
 function D2 () {
-	
+    scene.setTileMap(img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . 4 4 4 . 
+. . . . . . 4 . 4 . 
+3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 
+`)
+    scene.setTile(3, img`
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
+`, true)
+    scene.setTile(4, img`
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
+`, false)
 }
-function D3 () {
-	
-}
-function D4 () {
-	
-}
+scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
+    D2()
+})
 function D5 () {
 	
 }
-scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
-    answer = game.askForString("√p^2")
-    if (answer == "p") {
-        D2()
-    } else {
-        D1()
-    }
-})
-let answer = ""
 music.jumpDown.playUntilDone()
 scene.setBackgroundColor(13)
 let kitten = sprites.create(img`
@@ -98,7 +137,7 @@ kitten.setVelocity(0, 29)
 pause(2000)
 let name = game.askForString("What is your name?")
 game.splash("Hello " + name)
-answer = game.askForString("Can you escape the room?")
+let answer = game.askForString("Can you escape the room?")
 if (answer == "yes") {
     game.showLongText("Good luck!", DialogLayout.Center)
 } else {
@@ -138,3 +177,49 @@ f f f c 3 c c c c c c f . .
 `, SpriteKind.Player)
 controller.moveSprite(Girl)
 Girl.setPosition(2, 54)
+scene.setTileMap(img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . 2 2 2 . . . . 
+. . . 2 . 2 . . . . 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+`)
+scene.setTile(1, img`
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
+`, true)
+scene.setTile(2, img`
+b d d d d d d c c d d d d d d c 
+d b b b b b c d d c b b b b b c 
+d b b b b c d b b b c b b b b c 
+d b b b c d b b b b b c b b b c 
+d b b c d b b b b b b b c b b c 
+d b c d b b b b b b b b b c b c 
+d c d b b b b b b b b b b b c b 
+c d b b b b b b b b b b b b b c 
+c d b b b b b b b b b b b b c d 
+d c b b b b b b b b b b b c d c 
+d b c b b b b b b b b b c d b c 
+d b b c b b b b b b b c d b b c 
+d b b b c b b b b b c d b b b c 
+d b b b b c b b b c d b b b b c 
+d b b b b b c b c d b b b b b c 
+c c c c c c b c d c c c c c c a 
+`, false)
