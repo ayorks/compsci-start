@@ -360,7 +360,7 @@ kitten.say("ready", 5000)
 pause(200)
 kitten.say("set", 5000)
 pause(200)
-// Wow you have a lot going on already!  Nice coding! 
+// Wow you have a lot going on already!  Nice coding!
 // Keep up the good work.  I can't wait to save the
 // kitty!!!!
 kitten.say("go", 5000)
