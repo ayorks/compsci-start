@@ -313,7 +313,7 @@ scene.onHitTile(SpriteKind.Player, 4, function (sprite) {
     Q1 = game.askForString("Who is helping you solve this puzzle? (you are)")
     if (Q1 == "ur") {
         D3()
-        game.showLongText("pu", DialogLayout.Bottom)
+        game.showLongText("pur", DialogLayout.Bottom)
     } else {
         D2()
     }
