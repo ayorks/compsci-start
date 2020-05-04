@@ -1,5 +1,5 @@
 {
-    "name": "Compsci start",
+    "name": "Compsci finish",
     "dependencies": {
         "device": "*",
         "animation": "*",
