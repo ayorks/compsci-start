@@ -251,8 +251,8 @@ c c c c c c c b a b c c c c c a
 scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
     Q1 = game.askForString("The first letter is after o in the alphabet.")
     if (Q1 == "p") {
-        game.showLongText("p", DialogLayout.Bottom)
         D2()
+        game.showLongText("p", DialogLayout.Bottom)
     } else {
         D1()
     }
