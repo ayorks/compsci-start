@@ -349,7 +349,7 @@ game.splash("Hello " + name)
 let answer = game.askForString("Can you escape the room?")
 if (answer == "yes") {
     game.showLongText("Good luck!", DialogLayout.Center)
-    info.startCountdown(1000)
+    info.startCountdown(250)
 } else {
     game.showLongText("Bye then. Nice seeing u", DialogLayout.Center)
     game.reset()
