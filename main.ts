@@ -172,25 +172,29 @@ c c c c c c b c d c c c c c c a
 `, true)
 }
 scene.onHitTile(SpriteKind.Player, 6, function (sprite) {
-    Q1 = game.askForString("QUESTION")
-    if (Q1 == "answer") {
+    Q1 = game.askForString("How do you say \"name\" in Azerbaijani?")
+    if (Q1 == "adi") {
+        game.showLongText("puradi", DialogLayout.Bottom)
         D4()
     } else {
         D3()
     }
 })
 scene.onHitTile(SpriteKind.Player, 8, function (sprite) {
-    Q1 = game.askForString("QUESTION")
-    if (Q1 == "answer") {
+    Q1 = game.askForString("A snake hisses this letter")
+    if (Q1 == "s") {
+        game.showLongText("puradis", DialogLayout.Bottom)
         D5()
     } else {
         D4()
     }
 })
 scene.onHitTile(SpriteKind.Player, 10, function (sprite) {
-    Q1 = game.askForString("QUESTION")
-    if (Q1 == "answer") {
-        game.showLongText("puradise :) - You beat the clock", DialogLayout.Full)
+    Q1 = game.askForString("You are almost at the _nd")
+    if (Q1 == "e") {
+        info.stopCountdown()
+        game.showLongText("puradise", DialogLayout.Bottom)
+        game.over(true, effects.confetti)
     } else {
         D5()
     }
@@ -245,8 +249,9 @@ c c c c c c c b a b c c c c c a
 `, true)
 }
 scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
-    Q1 = game.askForString("QUESTION")
-    if (Q1 == "answer") {
+    Q1 = game.askForString("The first letter is after o in the alphabet.")
+    if (Q1 == "p") {
+        game.showLongText("p", DialogLayout.Bottom)
         D2()
     } else {
         D1()
@@ -301,9 +306,13 @@ d 1 1 1 1 1 1 b d 1 1 1 1 1 1 b
 b b b b b b d e d b b b b b b e 
 `, true)
 }
+info.onCountdownEnd(function () {
+    game.over(false)
+})
 scene.onHitTile(SpriteKind.Player, 4, function (sprite) {
-    Q1 = game.askForString("QUESTION")
-    if (Q1 == "answer") {
+    Q1 = game.askForString("Who is helping you solve this puzzle? (you are)")
+    if (Q1 == "ur") {
+        game.showLongText("pu", DialogLayout.Bottom)
         D3()
     } else {
         D2()
@@ -340,6 +349,7 @@ game.splash("Hello " + name)
 let answer = game.askForString("Can you escape the room?")
 if (answer == "yes") {
     game.showLongText("Good luck!", DialogLayout.Center)
+    info.startCountdown(1000)
 } else {
     game.showLongText("Bye then. Nice seeing u", DialogLayout.Center)
     game.reset()
