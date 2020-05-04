@@ -174,8 +174,8 @@ c c c c c c b c d c c c c c c a
 scene.onHitTile(SpriteKind.Player, 6, function (sprite) {
     Q1 = game.askForString("How do you say \"name\" in Azerbaijani?")
     if (Q1 == "adi") {
-        game.showLongText("puradi", DialogLayout.Bottom)
         D4()
+        game.showLongText("puradi", DialogLayout.Bottom)
     } else {
         D3()
     }
@@ -183,8 +183,8 @@ scene.onHitTile(SpriteKind.Player, 6, function (sprite) {
 scene.onHitTile(SpriteKind.Player, 8, function (sprite) {
     Q1 = game.askForString("A snake hisses this letter")
     if (Q1 == "s") {
-        game.showLongText("puradis", DialogLayout.Bottom)
         D5()
+        game.showLongText("puradis", DialogLayout.Bottom)
     } else {
         D4()
     }
@@ -312,8 +312,8 @@ info.onCountdownEnd(function () {
 scene.onHitTile(SpriteKind.Player, 4, function (sprite) {
     Q1 = game.askForString("Who is helping you solve this puzzle? (you are)")
     if (Q1 == "ur") {
-        game.showLongText("pu", DialogLayout.Bottom)
         D3()
+        game.showLongText("pu", DialogLayout.Bottom)
     } else {
         D2()
     }
