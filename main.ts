@@ -3,13 +3,127 @@ enum ActionKind {
     Idle,
     Jumping
 }
+namespace myTiles {
+    //% blockIdentity=images._tile
+    export const tile0 = img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`
+}
 function D3 () {
-	
+    Girl.setPosition(2, 54)
+    scene.setTileMap(img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . 6 6 6 . 
+. . . . . . 6 . 6 . 
+5 5 5 5 5 5 5 5 5 5 
+5 5 5 5 5 5 5 5 5 5 
+5 5 5 5 5 5 5 5 5 5 
+5 5 5 5 5 5 5 5 5 5 
+`)
+    scene.setTile(5, img`
+b d d d d c d d d d d d d d d c 
+d b b b b b c b b b b b b b b c 
+d b b b b b c b b b b b b b b c 
+d b b b b b b c b b b b b b b c 
+d b b b b b b c b b b b b b b c 
+d b b b b b b c b b b b b b b c 
+d b b b b b b b c b b b b b b c 
+d b b b b b b b b c b b b b b c 
+d b b b b b b b b c b b b b b c 
+d b b b b b b b c d c c b b b c 
+d b b b b b b b c d b b c c b c 
+d b b b b b b c d b b b b b c c 
+d b b b b b c c d b b b b b b c 
+d b b b b b c d b b b b b b b c 
+d b b b b c c d b b b b b b b c 
+c c c c c c c c c c c c c c c a 
+`, true)
+    scene.setTile(6, img`
+b d d d d c d d d d d d d d d c 
+d b b b b b c b b b b b b b b c 
+d b b b b b c b b b b b b b b c 
+d b b b b b b c b b b b b b b c 
+d b b b b b b c b b b b b b b c 
+d b b b b b b c b b b b b b b c 
+d b b b b b b b c b b b b b b c 
+d b b b b b b b b c b b b b b c 
+d b b b b b b b b c b b b b b c 
+d b b b b b b b c d c c b b b c 
+d b b b b b b b c d b b c c b c 
+d b b b b b b c d b b b b b c c 
+d b b b b b c c d b b b b b b c 
+d b b b b b c d b b b b b b b c 
+d b b b b c c d b b b b b b b c 
+c c c c c c c c c c c c c c c a 
+`, true)
 }
 function D4 () {
-	
+    Girl.setPosition(2, 54)
+    scene.setTileMap(img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . 8 8 8 . . . . 
+. . . 8 . 8 . . . . 
+7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 
+`)
+    scene.setTile(7, img`
+b d d d d d d c d 1 1 1 1 1 1 c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b b 1 d d d d d d d 
+c c c c c c b a c c c c c c d a 
+d 1 1 1 1 1 1 c b d d d d d d c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d d d b b b b b b b 
+c c c c c c d a b c c c c c c a 
+`, true)
+    scene.setTile(8, img`
+b d d d d d d c d 1 1 1 1 1 1 c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b c 1 d d d d d d c 
+d b b b b b b b 1 d d d d d d d 
+c c c c c c b a c c c c c c d a 
+d 1 1 1 1 1 1 c b d d d d d d c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d c d b b b b b b c 
+1 d d d d d d d d b b b b b b b 
+c c c c c c d a b c c c c c c a 
+`, true)
 }
 function D1 () {
+    Girl.setPosition(2, 54)
     scene.setTileMap(img`
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -55,9 +169,34 @@ d b b b c b b b b b c d b b b c
 d b b b b c b b b c d b b b b c 
 d b b b b b c b c d b b b b b c 
 c c c c c c b c d c c c c c c a 
-`, false)
+`, true)
 }
+scene.onHitTile(SpriteKind.Player, 6, function (sprite) {
+    Q1 = game.askForString("QUESTION")
+    if (Q1 == "answer") {
+        D4()
+    } else {
+        D3()
+    }
+})
+scene.onHitTile(SpriteKind.Player, 8, function (sprite) {
+    Q1 = game.askForString("QUESTION")
+    if (Q1 == "answer") {
+        D5()
+    } else {
+        D4()
+    }
+})
+scene.onHitTile(SpriteKind.Player, 10, function (sprite) {
+    Q1 = game.askForString("QUESTION")
+    if (Q1 == "answer") {
+        game.showLongText("puradise :) - You beat the clock", DialogLayout.Full)
+    } else {
+        D5()
+    }
+})
 function D2 () {
+    Girl.setPosition(2, 54)
     scene.setTileMap(img`
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -69,48 +208,109 @@ function D2 () {
 3 3 3 3 3 3 3 3 3 3 
 `)
     scene.setTile(3, img`
-b d d d d d d c c d d d d d d c 
-d b b b b b c d d c b b b b b c 
-d b b b b c d b b b c b b b b c 
-d b b b c d b b b b b c b b b c 
-d b b c d b b b b b b b c b b c 
-d b c d b b b b b b b b b c b c 
-d c d b b b b b b b b b b b c b 
-c d b b b b b b b b b b b b b c 
-c d b b b b b b b b b b b b c d 
-d c b b b b b b b b b b b c d c 
-d b c b b b b b b b b b c d b c 
-d b b c b b b b b b b c d b b c 
-d b b b c b b b b b c d b b b c 
-d b b b b c b b b c d b b b b c 
-d b b b b b c b c d b b b b b c 
-c c c c c c b c d c c c c c c a 
+b d d d d d d c b d d d d d d c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b b d b b b b b b b 
+c c c c c c b a c c c c c c b a 
+c b d d d d d d c b d d d d d c 
+c d b b b b b b c d b b b b b c 
+c d b b b b b b c d b b b b b c 
+c d b b b b b b c b b b b b b c 
+c d b b b b b c d b b b b b b c 
+c d b b b b b c d b b b b b b c 
+c d b b b b b c b b b b b b b b 
+c c c c c c c b a b c c c c c a 
 `, true)
     scene.setTile(4, img`
-b d d d d d d c c d d d d d d c 
-d b b b b b c d d c b b b b b c 
-d b b b b c d b b b c b b b b c 
-d b b b c d b b b b b c b b b c 
-d b b c d b b b b b b b c b b c 
-d b c d b b b b b b b b b c b c 
-d c d b b b b b b b b b b b c b 
-c d b b b b b b b b b b b b b c 
-c d b b b b b b b b b b b b c d 
-d c b b b b b b b b b b b c d c 
-d b c b b b b b b b b b c d b c 
-d b b c b b b b b b b c d b b c 
-d b b b c b b b b b c d b b b c 
-d b b b b c b b b c d b b b b c 
-d b b b b b c b c d b b b b b c 
-c c c c c c b c d c c c c c c a 
-`, false)
+b d d d d d d c b d d d d d d c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b c d b b b b b b c 
+d b b b b b b b d b b b b b b b 
+c c c c c c b a c c c c c c b a 
+c b d d d d d d c b d d d d d c 
+c d b b b b b b c d b b b b b c 
+c d b b b b b b c d b b b b b c 
+c d b b b b b b c b b b b b b c 
+c d b b b b b c d b b b b b b c 
+c d b b b b b c d b b b b b b c 
+c d b b b b b c b b b b b b b b 
+c c c c c c c b a b c c c c c a 
+`, true)
 }
 scene.onHitTile(SpriteKind.Player, 2, function (sprite) {
-    D2()
+    Q1 = game.askForString("QUESTION")
+    if (Q1 == "answer") {
+        D2()
+    } else {
+        D1()
+    }
 })
 function D5 () {
-	
+    Girl.setPosition(2, 54)
+    scene.setTileMap(img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . a a a 
+. . . . . . . a . a 
+9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 
+`)
+    scene.setTile(9, img`
+d 1 1 1 1 1 1 b d 1 1 1 1 1 1 b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d d 1 d d d d d d d 
+b b b b b b d e b b b b b b d e 
+d 1 1 1 1 1 1 b d 1 1 1 1 1 1 b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d d 1 d d d d d d d 
+b b b b b b d e d b b b b b b e 
+`, true)
+    scene.setTile(10, img`
+d 1 1 1 1 1 1 b d 1 1 1 1 1 1 b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d d 1 d d d d d d d 
+b b b b b b d e b b b b b b d e 
+d 1 1 1 1 1 1 b d 1 1 1 1 1 1 b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d b 1 d d d d d d b 
+1 d d d d d d d 1 d d d d d d d 
+b b b b b b d e d b b b b b b e 
+`, true)
 }
+scene.onHitTile(SpriteKind.Player, 4, function (sprite) {
+    Q1 = game.askForString("QUESTION")
+    if (Q1 == "answer") {
+        D3()
+    } else {
+        D2()
+    }
+})
+let Q1 = ""
+let Girl: Sprite = null
 music.jumpDown.playUntilDone()
 scene.setBackgroundColor(13)
 let kitten = sprites.create(img`
@@ -157,7 +357,7 @@ kitten.say("go", 5000)
 game.showLongText("Here is how it works: You must enter the portals and answer the questions. Then use the letters from your answers to create the key word, answering the riddle. Then you will escape. You must do this before the time runs out", DialogLayout.Full)
 game.showLongText("Riddle Question: Where is the missing kitten?", DialogLayout.Full)
 kitten.destroy()
-let Girl = sprites.create(img`
+Girl = sprites.create(img`
 . . . . . . . . . . . . . . 
 . f f f . f f f f f . . . . 
 f f f f f c c c c f f . . . 
@@ -176,50 +376,5 @@ f f f c 3 c c c c c c f . .
 . . . f f . . . f f f . . . 
 `, SpriteKind.Player)
 controller.moveSprite(Girl)
-Girl.setPosition(2, 54)
-scene.setTileMap(img`
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . 2 2 2 . . . . 
-. . . 2 . 2 . . . . 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-`)
-scene.setTile(1, img`
-b d d d d d d c c d d d d d d c 
-d b b b b b c d d c b b b b b c 
-d b b b b c d b b b c b b b b c 
-d b b b c d b b b b b c b b b c 
-d b b c d b b b b b b b c b b c 
-d b c d b b b b b b b b b c b c 
-d c d b b b b b b b b b b b c b 
-c d b b b b b b b b b b b b b c 
-c d b b b b b b b b b b b b c d 
-d c b b b b b b b b b b b c d c 
-d b c b b b b b b b b b c d b c 
-d b b c b b b b b b b c d b b c 
-d b b b c b b b b b c d b b b c 
-d b b b b c b b b c d b b b b c 
-d b b b b b c b c d b b b b b c 
-c c c c c c b c d c c c c c c a 
-`, true)
-scene.setTile(2, img`
-b d d d d d d c c d d d d d d c 
-d b b b b b c d d c b b b b b c 
-d b b b b c d b b b c b b b b c 
-d b b b c d b b b b b c b b b c 
-d b b c d b b b b b b b c b b c 
-d b c d b b b b b b b b b c b c 
-d c d b b b b b b b b b b b c b 
-c d b b b b b b b b b b b b b c 
-c d b b b b b b b b b b b b c d 
-d c b b b b b b b b b b b c d c 
-d b c b b b b b b b b b c d b c 
-d b b c b b b b b b b c d b b c 
-d b b b c b b b b b c d b b b c 
-d b b b b c b b b c d b b b b c 
-d b b b b b c b c d b b b b b c 
-c c c c c c b c d c c c c c c a 
-`, false)
+scene.cameraFollowSprite(Girl)
+D1()
