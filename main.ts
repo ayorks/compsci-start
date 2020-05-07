@@ -351,8 +351,7 @@ if (answer == "yes") {
     game.showLongText("Good luck!", DialogLayout.Center)
     info.startCountdown(250)
 } else {
-    game.showLongText("Bye then. Nice seeing u", DialogLayout.Center)
-    game.reset()
+    game.showLongText("Oh well, that's too bad. You're stuck.", DialogLayout.Center)
 }
 kitten.setPosition(74, 59)
 pause(200)
